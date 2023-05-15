@@ -1,0 +1,6 @@
+# Ignore DS_store files
+.DS_Store
+
+#Ignore RData files
+.RData
+
