@@ -1,0 +1,55 @@
+From 00f80fd1964ee01f549f792ca1bfc269c748e7e8 Mon Sep 17 00:00:00 2001
+From: dajeong <kimdajeong10@gmail.com>
+Date: Mon, 15 May 2023 10:44:57 -0700
+Subject: [PATCH] done
+
+---
+ sandbox/todo_commands_dk     | 31 +++++++++++++++++++++++++++++++
+ sandbox/todo_commands_dk.txt |  0
+ 2 files changed, 31 insertions(+)
+ create mode 100644 sandbox/todo_commands_dk
+ delete mode 100644 sandbox/todo_commands_dk.txt
+
+diff --git a/sandbox/todo_commands_dk b/sandbox/todo_commands_dk
+new file mode 100644
+index 0000000..f913446
+--- /dev/null
++++ b/sandbox/todo_commands_dk
+@@ -0,0 +1,31 @@
++
++cd c:/users/kimda/downloads/sandbox2023
++git init
++git remote add origin https://github.com/kim-dajeong/sandbox.git
++git branch -m main
++git config --global push.autoSetupRemote true
++touch .gitignore
++nano .gitignore 
++git add .gitignore
++git commit'git push
++git branch playground
++rm -r sandbox/data/update2019
++cd sandbox sed -i '1,$d' sandbox_todo.txt
++git add .
++git commit
++git push
++git checkout main
++rm -r data/zohnerdata
++rm -r analyses/cleaning/zohner_cleaning
++sed -i '1,$d' data/dailyclimatedata_WHERE.txt
++nano data/dailyclimatedata_WHERE.txt
++sed -i '1,$d' analyses/cleaning/_cleaningREADME.txt
++nano analyses/cleaning/_cleaningREADME.txt
++git add .
++git commmit
++git push
++git checkout playground
++rm -r analyses/cleaning/misccleaning_adventures
++git add .
++git commit
++git push
+diff --git a/sandbox/todo_commands_dk.txt b/sandbox/todo_commands_dk.txt
+deleted file mode 100644
+index e69de29..0000000
+-- 
+2.40.1.windows.1
+
